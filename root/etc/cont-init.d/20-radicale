@@ -1,0 +1,61 @@
+#!/bin/sh
+set -e
+
+# Create collections directory
+mkdir -p /config/collections
+
+# Determine config target
+CONFIG_TARGET="${RADICALE_CONFIG:-/config/config}"
+
+# A login set at install (RADICALE_USER + RADICALE_PASSWORD) turns password
+# auth on in the seeded config. An existing config is never rewritten.
+LOGIN=""
+if [ -n "${RADICALE_USER}" ] && [ -n "${RADICALE_PASSWORD}" ]; then
+    LOGIN=1
+fi
+
+# Seed default configuration if none exists
+if [ ! -f /config/config ] && [ ! -f /config/radicale.conf ]; then
+    echo "[init] Creating default ${CONFIG_TARGET}..."
+    cp /etc/radicale/config.default "${CONFIG_TARGET}"
+    if [ -n "${LOGIN}" ]; then
+        sed -i '' 's/^type = none$/type = htpasswd/' "${CONFIG_TARGET}"
+    fi
+fi
+
+# Seed empty users file if missing
+if [ ! -f /config/users ]; then
+    touch /config/users
+fi
+
+# Write the login to the users file (bcrypt), replacing that user's old line,
+# so changing the password and restarting takes effect. The password is read
+# from the environment, never passed on a command line.
+if [ -n "${LOGIN}" ]; then
+    PY=$(head -1 /usr/local/bin/radicale | sed 's/^#!//')
+    CONFIG_TARGET="${CONFIG_TARGET}" "${PY}" - <<'EOF'
+import configparser, os, bcrypt
+
+user = os.environ["RADICALE_USER"]
+pw = os.environ["RADICALE_PASSWORD"].encode()
+path = "/config/users"
+keep = [l for l in open(path).read().splitlines() if l and l.split(":", 1)[0] != user]
+keep.append(user + ":" + bcrypt.hashpw(pw, bcrypt.gensalt()).decode())
+with open(path, "w") as f:
+    f.write("\n".join(keep) + "\n")
+print(f"[init] Login set for {user}")
+
+cfg = configparser.ConfigParser()
+for p in (os.environ["CONFIG_TARGET"], "/config/radicale.conf"):
+    if os.path.exists(p):
+        cfg.read(p)
+        if cfg.get("auth", "type", fallback="none") != "htpasswd":
+            print(f"[init] WARNING: {p} has [auth] type = {cfg.get('auth', 'type', fallback='none')}: "
+                  "the login is not checked until it is set to htpasswd")
+        break
+EOF
+fi
+
+# Ensure bsd owns /config; the users file holds password hashes
+chown -R bsd:bsd /config
+chmod 600 /config/users

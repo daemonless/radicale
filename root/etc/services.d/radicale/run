@@ -1,0 +1,23 @@
+#!/bin/sh
+# Radicale s6 service
+
+export HOME=/config
+RADICALE_CONFIG="${RADICALE_CONFIG:-/config/config}"
+if [ ! -f "${RADICALE_CONFIG}" ] && [ -f /config/radicale.conf ]; then
+    RADICALE_CONFIG=/config/radicale.conf
+fi
+export RADICALE_CONFIG
+export PYTHONDONTWRITEBYTECODE=1
+export PYTHONUNBUFFERED=1
+export LC_ALL=C.UTF-8
+export LANG=C.UTF-8
+
+# Signal readiness once the healthcheck passes (FD 3, see notification-fd)
+s6-ready-when /healthz
+
+echo "[INFO] Starting radicale on 0.0.0.0:5232 with config ${RADICALE_CONFIG}..."
+
+cd /config
+exec /usr/local/bin/s6-setuidgid bsd \
+    /usr/local/bin/radicale \
+    --config "${RADICALE_CONFIG}"

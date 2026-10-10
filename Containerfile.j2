@@ -1,0 +1,40 @@
+ARG BASE_VERSION=15.1
+FROM ghcr.io/daemonless/base:${BASE_VERSION}
+
+ARG FREEBSD_ARCH=amd64
+ARG PKG_NAME="py312-radicale"
+ARG PACKAGES="py312-radicale ca_root_nss"
+
+LABEL org.opencontainers.image.title="Radicale" \
+      org.opencontainers.image.description="Radicale is a lightweight CalDAV (calendar, todo-lists) and CardDAV (contacts) server." \
+      org.opencontainers.image.source="https://github.com/daemonless/radicale" \
+      org.opencontainers.image.url="https://radicale.org/" \
+      org.opencontainers.image.licenses="GPL-3.0-or-later" \
+      org.opencontainers.image.vendor="daemonless" \
+      org.opencontainers.image.authors="daemonless" \
+      io.daemonless.category="Productivity" \
+      io.daemonless.port="5232" \
+      io.daemonless.arch="${FREEBSD_ARCH}" \
+      io.daemonless.pkg-source="pkg" \
+      io.daemonless.packages="${PACKAGES}" \
+      io.daemonless.pkg-name="${PKG_NAME}"
+
+# Install radicale
+RUN pkg update && \
+    pkg install -y ${PACKAGES} && \
+    mkdir -p /app && \
+    pkg query '%v' ${PKG_NAME} > /app/version && \
+    pkg clean -ay && \
+    rm -rf /var/cache/pkg/* /var/db/pkg/repos/*
+
+# Copy root filesystem
+COPY root/ /
+
+# Set permissions
+RUN chmod +x /etc/services.d/radicale/run /healthz /etc/cont-init.d/*
+
+# Expose
+EXPOSE 5232
+
+# Volumes
+VOLUME /config

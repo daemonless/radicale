@@ -1,0 +1,48 @@
+name: radicale
+
+x-daemonless:
+  title: "Radicale"
+  icon: ":material-calendar-sync:"
+  category: "Productivity"
+  description: "Radicale is a lightweight CalDAV (calendar, todo-lists) and CardDAV (contacts) server."
+  upstream_url: "https://github.com/Kozea/Radicale"
+  web_url: "https://radicale.org/"
+  freshports_url: "https://www.freshports.org/www/radicale/"
+  user: "bsd"
+  mlock: false
+  community: "Discord:https://discord.gg/Kb9tkhecZT"
+
+  docs:
+    env:
+      PUID: "User ID for the application process"
+      PGID: "Group ID for the application process"
+      TZ: "Timezone for the container"
+      RADICALE_USER:
+        desc: "Login name. With RADICALE_PASSWORD, turns on password login when the config is first created; leave both empty for no login"
+        optional: true
+      RADICALE_PASSWORD:
+        desc: "Password for RADICALE_USER (set again and restart to change it)"
+        optional: true
+    volumes:
+      /config: "Configuration, users file, and collections storage"
+    ports:
+      5232: "CalDAV/CardDAV and Web UI"
+
+services:
+  radicale:
+    image: ghcr.io/daemonless/radicale:latest
+    container_name: radicale
+    restart: always
+
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=UTC
+      - RADICALE_USER=
+      - RADICALE_PASSWORD=
+
+    volumes:
+      - /path/to/containers/radicale:/config
+
+    ports:
+      - 5232:5232

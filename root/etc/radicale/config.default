@@ -1,0 +1,28 @@
+[server]
+# Bind to all interfaces inside the container
+hosts = 0.0.0.0:5232, [::]:5232
+
+[storage]
+# Store collections in /config/collections
+filesystem_folder = /config/collections
+
+[auth]
+# Authentication method: 'none' (anyone can log in) or 'htpasswd'.
+# Set RADICALE_USER and RADICALE_PASSWORD before the first start and this is
+# htpasswd with that login. To add users later, set type = htpasswd and add
+# bcrypt lines to /config/users (htpasswd -B, or the env pair + restart).
+type = none
+htpasswd_filename = /config/users
+htpasswd_encryption = bcrypt
+
+[rights]
+# Access rights: 'owner_only' (default) or 'from_file'
+type = owner_only
+file = /config/rights
+
+[web]
+# Built-in web interface
+type = internal
+
+[logging]
+level = info

@@ -1,0 +1,5 @@
+#!/bin/sh
+# Daemonless standard healthcheck for radicale
+# GET /.web/ returns HTTP 200 without redirect and bypasses collection auth
+
+exec fetch -qo /dev/null -T 5 "http://127.0.0.1:5232/.web/"
