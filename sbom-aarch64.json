@@ -1,11 +1,11 @@
 {
-  "generated": "2026-10-10T12:29:58Z",
+  "generated": "2026-10-11T08:12:07Z",
   "image": "radicale",
   "tags": {
     "pkg-aarch64": {
       "app_version": "3.8.1",
       "arch": "aarch64",
-      "generated": "2026-10-10T12:28:58Z",
+      "generated": "2026-10-11T08:10:53Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -662,7 +662,7 @@
     "pkg-latest-aarch64": {
       "app_version": "3.8.1",
       "arch": "aarch64",
-      "generated": "2026-10-10T12:29:03Z",
+      "generated": "2026-10-11T08:10:58Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
