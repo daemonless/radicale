@@ -1,11 +1,11 @@
 {
-  "generated": "2026-10-10T12:27:30Z",
+  "generated": "2026-10-11T07:43:06Z",
   "image": "radicale",
   "tags": {
     "pkg-amd64": {
-      "app_version": "3.7.5",
+      "app_version": "3.8.1",
       "arch": "amd64",
-      "generated": "2026-10-10T12:26:58Z",
+      "generated": "2026-10-11T07:41:52Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -266,7 +266,7 @@
               "MIT"
             ],
             "name": "expat",
-            "version": "2.8.2"
+            "version": "2.8.4"
           },
           {
             "licenses": [
@@ -302,7 +302,7 @@
               "MIT"
             ],
             "name": "libffi",
-            "version": "3.6.0"
+            "version": "3.8.0"
           },
           {
             "licenses": [
@@ -323,7 +323,7 @@
               "BSD2CLAUSE"
             ],
             "name": "pkg",
-            "version": "2.7.5"
+            "version": "2.8.4"
           },
           {
             "licenses": [
@@ -337,35 +337,35 @@
               "MIT"
             ],
             "name": "py312-argon2-cffi-bindings",
-            "version": "25.1.0"
+            "version": "26.1.0_1"
           },
           {
             "licenses": [
               "APACHE20"
             ],
             "name": "py312-bcrypt",
-            "version": "5.0.0_6"
+            "version": "5.0.0_8"
           },
           {
             "licenses": [
               "MPL20"
             ],
             "name": "py312-certifi",
-            "version": "2026.6.17"
+            "version": "2026.7.22"
           },
           {
             "licenses": [
               "MIT"
             ],
             "name": "py312-cffi",
-            "version": "2.0.0"
+            "version": "2.1.1"
           },
           {
             "licenses": [
               "MIT"
             ],
             "name": "py312-charset-normalizer",
-            "version": "3.4.7"
+            "version": "3.5.1"
           },
           {
             "licenses": [
@@ -379,7 +379,7 @@
               "BSD3CLAUSE"
             ],
             "name": "py312-idna",
-            "version": "3.18"
+            "version": "3.20"
           },
           {
             "licenses": [
@@ -394,35 +394,35 @@
               "APACHE20"
             ],
             "name": "py312-packaging",
-            "version": "26.2"
+            "version": "26.3"
           },
           {
             "licenses": [
               "BSD3CLAUSE"
             ],
             "name": "py312-passlib",
-            "version": "1.7.4_1"
+            "version": "1.7.4_2"
           },
           {
             "licenses": [
               "BSD3CLAUSE"
             ],
             "name": "py312-pika",
-            "version": "1.4.1"
+            "version": "1.4.4"
           },
           {
             "licenses": [
               "BSD2CLAUSE"
             ],
             "name": "py312-pyasn1",
-            "version": "0.6.0"
+            "version": "0.6.4"
           },
           {
             "licenses": [
               "BSD3CLAUSE"
             ],
             "name": "py312-pycparser",
-            "version": "2.23"
+            "version": "3.0"
           },
           {
             "licenses": [
@@ -443,14 +443,14 @@
               "MIT"
             ],
             "name": "py312-pytz",
-            "version": "2026.2,1"
+            "version": "2026.3,1"
           },
           {
             "licenses": [
               "GPLv3+"
             ],
             "name": "py312-radicale",
-            "version": "3.7.5"
+            "version": "3.8.1"
           },
           {
             "licenses": [
@@ -471,7 +471,7 @@
               "MIT"
             ],
             "name": "py312-urllib3",
-            "version": "2.7.0,1"
+            "version": "2.8.0,1"
           },
           {
             "licenses": [
@@ -485,21 +485,21 @@
               "MIT"
             ],
             "name": "py312-wheel",
-            "version": "0.47.0"
+            "version": "0.48.0"
           },
           {
             "licenses": [
               "PSFL"
             ],
             "name": "python312",
-            "version": "3.12.14"
+            "version": "3.12.14_1"
           },
           {
             "licenses": [
               "GPLv3"
             ],
             "name": "readline",
-            "version": "8.3.3"
+            "version": "8.3.6"
           },
           {
             "licenses": [
@@ -529,7 +529,7 @@
           {
             "name": "argon2-cffi-bindings",
             "purl": "",
-            "version": "25.1.0"
+            "version": "26.1.0"
           },
           {
             "name": "bcrypt",
@@ -539,17 +539,17 @@
           {
             "name": "certifi",
             "purl": "",
-            "version": "2026.6.17"
+            "version": "2026.7.22"
           },
           {
             "name": "cffi",
             "purl": "",
-            "version": "2.0.0"
+            "version": "2.1.1"
           },
           {
             "name": "charset-normalizer",
             "purl": "",
-            "version": "3.4.7"
+            "version": "3.5.1"
           },
           {
             "name": "defusedxml",
@@ -564,7 +564,7 @@
           {
             "name": "idna",
             "purl": "",
-            "version": "3.18"
+            "version": "3.20"
           },
           {
             "name": "ldap3",
@@ -574,7 +574,7 @@
           {
             "name": "packaging",
             "purl": "",
-            "version": "26.2"
+            "version": "26.3"
           },
           {
             "name": "passlib",
@@ -584,17 +584,17 @@
           {
             "name": "pika",
             "purl": "",
-            "version": "1.4.1"
+            "version": "1.4.4"
           },
           {
             "name": "pyasn1",
             "purl": "",
-            "version": "0.6.0"
+            "version": "0.6.4"
           },
           {
             "name": "pycparser",
             "purl": "",
-            "version": "2.23"
+            "version": "3.0"
           },
           {
             "name": "pysocks",
@@ -609,12 +609,12 @@
           {
             "name": "pytz",
             "purl": "",
-            "version": "2026.2"
+            "version": "2026.3"
           },
           {
             "name": "radicale",
             "purl": "",
-            "version": "3.7.5"
+            "version": "3.8.1"
           },
           {
             "name": "requests",
@@ -629,7 +629,7 @@
           {
             "name": "urllib3",
             "purl": "",
-            "version": "2.7.0"
+            "version": "2.8.0"
           },
           {
             "name": "vobject",
@@ -639,7 +639,7 @@
           {
             "name": "wheel",
             "purl": "",
-            "version": "0.47.0"
+            "version": "0.48.0"
           }
         ],
         "ruby": [],
@@ -662,7 +662,7 @@
     "pkg-latest-amd64": {
       "app_version": "3.8.1",
       "arch": "amd64",
-      "generated": "2026-10-10T12:26:54Z",
+      "generated": "2026-10-11T07:42:26Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -909,7 +909,7 @@
               "MPL20"
             ],
             "name": "ca_root_nss",
-            "version": "3.130"
+            "version": "3.131"
           },
           {
             "licenses": [
