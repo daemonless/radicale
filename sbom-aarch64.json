@@ -1,11 +1,11 @@
 {
-  "generated": "2026-10-11T08:12:07Z",
+  "generated": "2026-10-12T00:27:19Z",
   "image": "radicale",
   "tags": {
     "pkg-aarch64": {
       "app_version": "3.8.1",
       "arch": "aarch64",
-      "generated": "2026-10-11T08:10:53Z",
+      "generated": "2026-10-12T00:26:08Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -662,7 +662,7 @@
     "pkg-latest-aarch64": {
       "app_version": "3.8.1",
       "arch": "aarch64",
-      "generated": "2026-10-11T08:10:58Z",
+      "generated": "2026-10-12T00:26:13Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -923,7 +923,7 @@
               "MIT"
             ],
             "name": "expat",
-            "version": "2.8.4"
+            "version": "2.8.5"
           },
           {
             "licenses": [
@@ -1100,7 +1100,7 @@
               "MIT"
             ],
             "name": "py312-pytz",
-            "version": "2026.3,1"
+            "version": "2026.5,1"
           },
           {
             "licenses": [
@@ -1266,7 +1266,7 @@
           {
             "name": "pytz",
             "purl": "",
-            "version": "2026.3"
+            "version": "2026.5"
           },
           {
             "name": "radicale",
