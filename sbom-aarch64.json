@@ -1,11 +1,11 @@
 {
-  "generated": "2026-10-14T20:05:15Z",
+  "generated": "2026-10-23T10:09:42Z",
   "image": "radicale",
   "tags": {
     "pkg-aarch64": {
       "app_version": "3.8.1",
       "arch": "aarch64",
-      "generated": "2026-10-14T20:04:09Z",
+      "generated": "2026-10-23T10:08:40Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -189,7 +189,7 @@
               "BSD2CLAUSE"
             ],
             "name": "FreeBSD-runtime",
-            "version": "15.1p4"
+            "version": "15.1p5"
           },
           {
             "licenses": [
@@ -238,7 +238,7 @@
               "PD"
             ],
             "name": "FreeBSD-zoneinfo",
-            "version": "15.1p4"
+            "version": "15.1p5"
           },
           {
             "licenses": [
@@ -252,14 +252,7 @@
               "MPL20"
             ],
             "name": "ca_root_nss",
-            "version": "3.130"
-          },
-          {
-            "licenses": [
-              "ISCL"
-            ],
-            "name": "execline",
-            "version": "2.9.8.1"
+            "version": "3.131"
           },
           {
             "licenses": [
@@ -492,7 +485,7 @@
               "PSFL"
             ],
             "name": "python312",
-            "version": "3.12.14_1"
+            "version": "3.12.15"
           },
           {
             "licenses": [
@@ -500,20 +493,6 @@
             ],
             "name": "readline",
             "version": "8.3.6"
-          },
-          {
-            "licenses": [
-              "ISCL"
-            ],
-            "name": "s6",
-            "version": "2.14.0.1"
-          },
-          {
-            "licenses": [
-              "ISCL"
-            ],
-            "name": "skalibs",
-            "version": "2.14.5.1"
           }
         ],
         "go": [],
@@ -648,7 +627,7 @@
       "source": "upstream",
       "summary": {
         "dotnet": 0,
-        "freebsd": 72,
+        "freebsd": 69,
         "go": 0,
         "java": 0,
         "node": 0,
@@ -656,13 +635,13 @@
         "python": 24,
         "ruby": 0,
         "rust": 0,
-        "total": 96
+        "total": 93
       }
     },
     "pkg-latest-aarch64": {
       "app_version": "3.8.3",
       "arch": "aarch64",
-      "generated": "2026-10-14T20:04:13Z",
+      "generated": "2026-10-23T10:08:45Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -846,7 +825,7 @@
               "BSD2CLAUSE"
             ],
             "name": "FreeBSD-runtime",
-            "version": "15.1p4"
+            "version": "15.1p5"
           },
           {
             "licenses": [
@@ -895,7 +874,7 @@
               "PD"
             ],
             "name": "FreeBSD-zoneinfo",
-            "version": "15.1p4"
+            "version": "15.1p5"
           },
           {
             "licenses": [
@@ -910,13 +889,6 @@
             ],
             "name": "ca_root_nss",
             "version": "3.131"
-          },
-          {
-            "licenses": [
-              "ISCL"
-            ],
-            "name": "execline",
-            "version": "2.9.8.1"
           },
           {
             "licenses": [
@@ -1001,7 +973,7 @@
               "APACHE20"
             ],
             "name": "py312-bcrypt",
-            "version": "5.0.0_8"
+            "version": "5.0.0_9"
           },
           {
             "licenses": [
@@ -1149,7 +1121,7 @@
               "PSFL"
             ],
             "name": "python312",
-            "version": "3.12.14_1"
+            "version": "3.12.15"
           },
           {
             "licenses": [
@@ -1157,20 +1129,6 @@
             ],
             "name": "readline",
             "version": "8.3.6"
-          },
-          {
-            "licenses": [
-              "ISCL"
-            ],
-            "name": "s6",
-            "version": "2.14.0.1"
-          },
-          {
-            "licenses": [
-              "ISCL"
-            ],
-            "name": "skalibs",
-            "version": "2.14.5.1"
           }
         ],
         "go": [],
@@ -1305,7 +1263,7 @@
       "source": "upstream",
       "summary": {
         "dotnet": 0,
-        "freebsd": 72,
+        "freebsd": 69,
         "go": 0,
         "java": 0,
         "node": 0,
@@ -1313,7 +1271,7 @@
         "python": 24,
         "ruby": 0,
         "rust": 0,
-        "total": 96
+        "total": 93
       }
     }
   }
