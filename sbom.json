@@ -1,11 +1,11 @@
 {
-  "generated": "2026-10-23T08:51:20Z",
+  "generated": "2026-11-01T18:28:49Z",
   "image": "radicale",
   "tags": {
     "pkg-amd64": {
       "app_version": "3.8.1",
       "arch": "amd64",
-      "generated": "2026-10-23T08:50:42Z",
+      "generated": "2026-11-01T18:27:22Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -189,7 +189,7 @@
               "BSD2CLAUSE"
             ],
             "name": "FreeBSD-runtime",
-            "version": "15.1p5"
+            "version": "15.1p6"
           },
           {
             "licenses": [
@@ -252,7 +252,7 @@
               "MPL20"
             ],
             "name": "ca_root_nss",
-            "version": "3.131"
+            "version": "3.132"
           },
           {
             "licenses": [
@@ -639,9 +639,9 @@
       }
     },
     "pkg-latest-amd64": {
-      "app_version": "3.8.3",
+      "app_version": "3.9.0",
       "arch": "amd64",
-      "generated": "2026-10-23T08:50:18Z",
+      "generated": "2026-11-01T18:28:16Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -825,7 +825,7 @@
               "BSD2CLAUSE"
             ],
             "name": "FreeBSD-runtime",
-            "version": "15.1p5"
+            "version": "15.1p6"
           },
           {
             "licenses": [
@@ -888,7 +888,7 @@
               "MPL20"
             ],
             "name": "ca_root_nss",
-            "version": "3.131"
+            "version": "3.132"
           },
           {
             "licenses": [
@@ -1079,7 +1079,7 @@
               "GPLv3+"
             ],
             "name": "py312-radicale",
-            "version": "3.8.3"
+            "version": "3.9.0"
           },
           {
             "licenses": [
@@ -1229,7 +1229,7 @@
           {
             "name": "radicale",
             "purl": "",
-            "version": "3.8.3"
+            "version": "3.9.0"
           },
           {
             "name": "requests",
