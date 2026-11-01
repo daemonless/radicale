@@ -1,11 +1,11 @@
 {
-  "generated": "2026-10-23T10:09:42Z",
+  "generated": "2026-11-01T18:33:25Z",
   "image": "radicale",
   "tags": {
     "pkg-aarch64": {
       "app_version": "3.8.1",
       "arch": "aarch64",
-      "generated": "2026-10-23T10:08:40Z",
+      "generated": "2026-11-01T18:32:18Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -189,7 +189,7 @@
               "BSD2CLAUSE"
             ],
             "name": "FreeBSD-runtime",
-            "version": "15.1p5"
+            "version": "15.1p6"
           },
           {
             "licenses": [
@@ -641,7 +641,7 @@
     "pkg-latest-aarch64": {
       "app_version": "3.8.3",
       "arch": "aarch64",
-      "generated": "2026-10-23T10:08:45Z",
+      "generated": "2026-11-01T18:32:23Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -825,7 +825,7 @@
               "BSD2CLAUSE"
             ],
             "name": "FreeBSD-runtime",
-            "version": "15.1p5"
+            "version": "15.1p6"
           },
           {
             "licenses": [
