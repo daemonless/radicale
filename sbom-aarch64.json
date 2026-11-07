@@ -1,11 +1,11 @@
 {
-  "generated": "2026-11-04T14:13:11Z",
+  "generated": "2026-11-07T08:38:09Z",
   "image": "radicale",
   "tags": {
     "pkg-aarch64": {
       "app_version": "3.8.1",
       "arch": "aarch64",
-      "generated": "2026-11-04T14:11:43Z",
+      "generated": "2026-11-07T08:36:38Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -639,9 +639,9 @@
       }
     },
     "pkg-latest-aarch64": {
-      "app_version": "3.8.3",
+      "app_version": "3.9.0",
       "arch": "aarch64",
-      "generated": "2026-11-04T14:11:47Z",
+      "generated": "2026-11-07T08:36:44Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -1079,7 +1079,7 @@
               "GPLv3+"
             ],
             "name": "py312-radicale",
-            "version": "3.8.3"
+            "version": "3.9.0"
           },
           {
             "licenses": [
@@ -1229,7 +1229,7 @@
           {
             "name": "radicale",
             "purl": "",
-            "version": "3.8.3"
+            "version": "3.9.0"
           },
           {
             "name": "requests",
