@@ -1,11 +1,11 @@
 {
-  "generated": "2026-11-07T08:38:09Z",
+  "generated": "2026-11-18T01:21:44Z",
   "image": "radicale",
   "tags": {
     "pkg-aarch64": {
       "app_version": "3.8.1",
       "arch": "aarch64",
-      "generated": "2026-11-07T08:36:38Z",
+      "generated": "2026-11-18T01:19:58Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -259,7 +259,7 @@
               "MIT"
             ],
             "name": "expat",
-            "version": "2.8.4"
+            "version": "2.9.0"
           },
           {
             "licenses": [
@@ -316,7 +316,7 @@
               "BSD2CLAUSE"
             ],
             "name": "pkg",
-            "version": "2.8.4"
+            "version": "2.9.2"
           },
           {
             "licenses": [
@@ -344,7 +344,7 @@
               "MPL20"
             ],
             "name": "py312-certifi",
-            "version": "2026.7.22"
+            "version": "2026.10.23"
           },
           {
             "licenses": [
@@ -485,7 +485,7 @@
               "PSFL"
             ],
             "name": "python312",
-            "version": "3.12.15"
+            "version": "3.12.16"
           },
           {
             "licenses": [
@@ -518,7 +518,7 @@
           {
             "name": "certifi",
             "purl": "",
-            "version": "2026.7.22"
+            "version": "2026.10.23"
           },
           {
             "name": "cffi",
@@ -641,7 +641,7 @@
     "pkg-latest-aarch64": {
       "app_version": "3.9.0",
       "arch": "aarch64",
-      "generated": "2026-11-07T08:36:44Z",
+      "generated": "2026-11-18T01:20:01Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -895,7 +895,7 @@
               "MIT"
             ],
             "name": "expat",
-            "version": "2.9.0"
+            "version": "2.10.0"
           },
           {
             "licenses": [
@@ -952,7 +952,7 @@
               "BSD2CLAUSE"
             ],
             "name": "pkg",
-            "version": "2.8.4"
+            "version": "2.9.0"
           },
           {
             "licenses": [
