@@ -1,11 +1,11 @@
 {
-  "generated": "2026-11-19T09:53:29Z",
+  "generated": "2026-11-27T11:56:35Z",
   "image": "radicale",
   "tags": {
     "pkg-aarch64": {
       "app_version": "3.8.1",
       "arch": "aarch64",
-      "generated": "2026-11-19T09:51:33Z",
+      "generated": "2026-11-27T11:54:52Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -77,7 +77,7 @@
               "BSD2CLAUSE"
             ],
             "name": "FreeBSD-libarchive",
-            "version": "15.1"
+            "version": "15.1p7"
           },
           {
             "licenses": [
@@ -105,7 +105,7 @@
               "BSD2CLAUSE"
             ],
             "name": "FreeBSD-libldns",
-            "version": "15.1"
+            "version": "15.1p7"
           },
           {
             "licenses": [
@@ -147,14 +147,14 @@
               "BSD2CLAUSE"
             ],
             "name": "FreeBSD-openssl",
-            "version": "15.1"
+            "version": "15.1p7"
           },
           {
             "licenses": [
               "BSD2CLAUSE"
             ],
             "name": "FreeBSD-openssl-lib",
-            "version": "15.1p4"
+            "version": "15.1p7"
           },
           {
             "licenses": [
@@ -168,7 +168,7 @@
               "BSD2CLAUSE"
             ],
             "name": "FreeBSD-pkg-bootstrap",
-            "version": "15.1"
+            "version": "15.1p7"
           },
           {
             "licenses": [
@@ -189,7 +189,7 @@
               "BSD2CLAUSE"
             ],
             "name": "FreeBSD-runtime",
-            "version": "15.1p6"
+            "version": "15.1p7"
           },
           {
             "licenses": [
@@ -224,7 +224,7 @@
               "CDDL-1.0"
             ],
             "name": "FreeBSD-zfs-lib",
-            "version": "15.1p1"
+            "version": "15.1p7"
           },
           {
             "licenses": [
@@ -238,7 +238,7 @@
               "PD"
             ],
             "name": "FreeBSD-zoneinfo",
-            "version": "15.1p5"
+            "version": "15.1p7"
           },
           {
             "licenses": [
@@ -252,14 +252,14 @@
               "MPL20"
             ],
             "name": "ca_root_nss",
-            "version": "3.132"
+            "version": "3.134"
           },
           {
             "licenses": [
               "MIT"
             ],
             "name": "expat",
-            "version": "2.9.0"
+            "version": "2.10.0"
           },
           {
             "licenses": [
@@ -641,7 +641,7 @@
     "pkg-latest-aarch64": {
       "app_version": "3.9.0",
       "arch": "aarch64",
-      "generated": "2026-11-19T09:51:37Z",
+      "generated": "2026-11-27T11:54:56Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -713,7 +713,7 @@
               "BSD2CLAUSE"
             ],
             "name": "FreeBSD-libarchive",
-            "version": "15.1"
+            "version": "15.1p7"
           },
           {
             "licenses": [
@@ -741,7 +741,7 @@
               "BSD2CLAUSE"
             ],
             "name": "FreeBSD-libldns",
-            "version": "15.1"
+            "version": "15.1p7"
           },
           {
             "licenses": [
@@ -783,14 +783,14 @@
               "BSD2CLAUSE"
             ],
             "name": "FreeBSD-openssl",
-            "version": "15.1"
+            "version": "15.1p7"
           },
           {
             "licenses": [
               "BSD2CLAUSE"
             ],
             "name": "FreeBSD-openssl-lib",
-            "version": "15.1p4"
+            "version": "15.1p7"
           },
           {
             "licenses": [
@@ -804,7 +804,7 @@
               "BSD2CLAUSE"
             ],
             "name": "FreeBSD-pkg-bootstrap",
-            "version": "15.1"
+            "version": "15.1p7"
           },
           {
             "licenses": [
@@ -825,7 +825,7 @@
               "BSD2CLAUSE"
             ],
             "name": "FreeBSD-runtime",
-            "version": "15.1p6"
+            "version": "15.1p7"
           },
           {
             "licenses": [
@@ -860,7 +860,7 @@
               "CDDL-1.0"
             ],
             "name": "FreeBSD-zfs-lib",
-            "version": "15.1p1"
+            "version": "15.1p7"
           },
           {
             "licenses": [
@@ -874,7 +874,7 @@
               "PD"
             ],
             "name": "FreeBSD-zoneinfo",
-            "version": "15.1p5"
+            "version": "15.1p7"
           },
           {
             "licenses": [
@@ -952,7 +952,7 @@
               "BSD2CLAUSE"
             ],
             "name": "pkg",
-            "version": "2.9.0"
+            "version": "2.9.2"
           },
           {
             "licenses": [
@@ -980,7 +980,7 @@
               "MPL20"
             ],
             "name": "py312-certifi",
-            "version": "2026.7.22"
+            "version": "2026.10.23"
           },
           {
             "licenses": [
@@ -994,7 +994,7 @@
               "MIT"
             ],
             "name": "py312-charset-normalizer",
-            "version": "3.5.1"
+            "version": "3.5.2"
           },
           {
             "licenses": [
@@ -1051,7 +1051,7 @@
               "BSD3CLAUSE"
             ],
             "name": "py312-pycparser",
-            "version": "3.0"
+            "version": "3.1"
           },
           {
             "licenses": [
@@ -1121,7 +1121,7 @@
               "PSFL"
             ],
             "name": "python312",
-            "version": "3.12.15"
+            "version": "3.12.16"
           },
           {
             "licenses": [
@@ -1154,7 +1154,7 @@
           {
             "name": "certifi",
             "purl": "",
-            "version": "2026.7.22"
+            "version": "2026.10.23"
           },
           {
             "name": "cffi",
@@ -1164,7 +1164,7 @@
           {
             "name": "charset-normalizer",
             "purl": "",
-            "version": "3.5.1"
+            "version": "3.5.2"
           },
           {
             "name": "defusedxml",
@@ -1209,7 +1209,7 @@
           {
             "name": "pycparser",
             "purl": "",
-            "version": "3.0"
+            "version": "3.1"
           },
           {
             "name": "pysocks",
