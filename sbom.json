@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-19T08:55:22Z",
+  "generated": "2026-11-27T10:08:17Z",
   "image": "radicale",
   "tags": {
     "pkg-amd64": {
@@ -639,9 +639,9 @@
       }
     },
     "pkg-latest-amd64": {
-      "app_version": "3.9.1",
+      "app_version": "3.9.2",
       "arch": "amd64",
-      "generated": "2026-11-17T23:38:51Z",
+      "generated": "2026-11-27T10:07:36Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -888,14 +888,14 @@
               "MPL20"
             ],
             "name": "ca_root_nss",
-            "version": "3.132"
+            "version": "3.134"
           },
           {
             "licenses": [
               "MIT"
             ],
             "name": "expat",
-            "version": "2.10.0"
+            "version": "2.11.0"
           },
           {
             "licenses": [
@@ -931,7 +931,7 @@
               "MIT"
             ],
             "name": "libffi",
-            "version": "3.8.0"
+            "version": "3.8.1"
           },
           {
             "licenses": [
@@ -952,7 +952,7 @@
               "BSD2CLAUSE"
             ],
             "name": "pkg",
-            "version": "2.9.2"
+            "version": "2.9.3"
           },
           {
             "licenses": [
@@ -1072,14 +1072,14 @@
               "MIT"
             ],
             "name": "py312-pytz",
-            "version": "2026.5,1"
+            "version": "2026.6,1"
           },
           {
             "licenses": [
               "GPLv3+"
             ],
             "name": "py312-radicale",
-            "version": "3.9.1"
+            "version": "3.9.2"
           },
           {
             "licenses": [
@@ -1224,12 +1224,12 @@
           {
             "name": "pytz",
             "purl": "",
-            "version": "2026.5"
+            "version": "2026.6"
           },
           {
             "name": "radicale",
             "purl": "",
-            "version": "3.9.1"
+            "version": "3.9.2"
           },
           {
             "name": "requests",
